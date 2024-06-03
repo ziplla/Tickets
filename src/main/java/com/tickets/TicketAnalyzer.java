@@ -15,6 +15,7 @@ public class TicketAnalyzer {
 
     public static void main(String[] args) {
         String filePath = args[0];
+//        String filePath = "tickets.json";
         List<Ticket> tickets = convertJsonFileToTickets(filePath);
         processTickets(tickets);
         calculateStatistics(tickets);
